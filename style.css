@@ -1,167 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #04030D;
-    color:#6E64AE;
-    text-align: center;
-          }
-
-h1 {
-    
-    color:#8D7DF0;
+  align-content: center;
+  background-color:lavender;
+  color:lavender;
+  margin: auto;
+  text-align: center;
 }
 
-h2 {
-    color:#6E64AE; 
+button {
+  margin: 10px 5px 10px 5px;
+  padding: 10px 20px 10px 20px;
+  background-color: violet;
+  color: white;
+  font-size: 24px;
+  border-radius: 25px;
 }
 
-h3 {
-    
-    color:#8D7DF0;
+img {
+  overflow: hidden;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: 100%;
+  width: 100%;
 }
 
-hr {
-    border-color: #8D7DF0;
-    border-style: solid none none none;
-    height:0px;
-    border-width: 2px;
-    
-          }
-.nav {
-    border-color: #8D7DF0;
-    border-style: solid;
-    height:0px;
-    border-width: 2px;
-    color: #483d8b;
-    font-size: 130%;
-    padding: 30px;
-    
-          }
-table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: separate;
-    border-spacing: 2px;
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    border-color: #8D7DF0;
-}
-
-/*a:link - a normal, unvisited link, 
-a:visited - a link the user has visited,
-a:hover - a link when a user mouses over it,
-a:active - the moment a link is clicked.*/
-
-    a:link {
-        color:#8D7DF0;
-    }
-    a:visited {
-        color:#6E64AE;
-    }
-    a:hover {
-        color:#7AD6CD;
-    }
-    a:active {
-        color:#86F2E8;
-    }
-.gamesbox {
-    border-color:#8D7DF0;
-    border-style: none;
-    
-    height:0px;
-    border-width: 2px;
-    
-    text-align: center;
-    
-    padding: 0% 20% 5% 20%;
-}
-
-.displaybox {
-    border-color:#8D7DF0;
-    border-style: solid;
-    
-    height:0px;
-    border-width: 2px;
-    
-    text-align: center;
-    
-    padding: 0% 5% 5% 5%;
-}
-          
 .icon {
-    border-color:#8D7DF0;
-    border-radius: 20%;
-    border-style: solid;
-    height: 300px;
-    object-fit:cover;
-    width:300px;
-          }
+  height: 25%;
+  width: 25%;
+}
 
-.iconleft {
-    border-color:#8D7DF0;
-    border-radius: 20%;
-    border-style: solid;
-    height: 300px;
-    float:left;
-    object-fit:cover;
-    width:300px;
-          }
+.grid-container {
+  display: grid;
+  margin: auto;
 
-.iconright {
-    align
-    border-color:#8D7DF0;
-    border-radius: 20%;
-    border-style: solid;
-    height: 300px;
-    float:right;
-    object-fit:cover;
-    width:300px;
-          }
+  background-color: none;
+  border: solid 2px black;
+  height: 1200px;
+  width: 890px;
+  grid-template-columns: repeat(3, 32.5%);
+  grid-template-rows: repeat(4, 24%);
+  gap: 10px;
 
+}
 
-.iconlarger {
-    border-color:#8D7DF0;
-    border-radius: 20%;
-    border-style: solid;
-    height: 600px;
-    
-    object-fit:cover;
-    width:600px;
-          }
+.grid-item {
+  background-color: blueviolet;
+  color: white;
 
-.iconlargel {
-    border-color:#8D7DF0;
-    border-radius: 20%;
-    border-style: solid;
-    height: 600px;
-    
-    object-fit:cover;
-    width:600px;
-                      }
+}
 
 .side {
-    display: inline-block;
-    width:300px;
-    
+  grid-column: span 1;
+  grid-row: span 1;
+  border-radius:  25%;
 }
 
-.video {
-    width:300px;
-    height: 300px;
-    object-fit:cover;
-    
-    border-color:#8D7DF0;
-    border-style: none;
-          }
-
-.logo {
-    width:200px;
-    height: 200px;
-    object-fit:cover;
-    
-    border-color:#8D7DF0;
-    border-style: solid;
-          }
-.rounded {
-    border-radius: 50%;
-          }
-#comment?
+.main {
+  grid-column: span 2;
+  grid-row: span 2;
+  border-radius:  12%;
+}
