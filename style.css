@@ -1,11 +1,23 @@
+:root {
+  --purpleBlack: hsla(265, 30%, 10%, 1.0);
+  --purpleMed: hsla(265, 40%, 30%, 1.0);
+  --purpleBright: hsla(260, 50%, 60%, 1.0);
+}
+
 * {
   box-sizing: border-box;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 body {
   align-content: center;
-  background-color:lavender;
-  color:lavender;
+  background: linear-gradient(black, var(--purpleMed));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--purpleBright);
+  font-family: 'Baumans', cursive;
+  font-size: 1em;
   margin: auto;
   text-align: center;
 }
@@ -13,31 +25,77 @@ body {
 button {
   margin: 10px 5px 10px 5px;
   padding: 10px 20px 10px 20px;
-  background-color: violet;
+  background-color: var(--purpleMed);
   color: white;
+  font-family: 'Baumans', cursive;
   font-size: 24px;
   border-radius: 25px;
 }
 
 img {
+  border: solid 5px var(--purpleMed);
   overflow: hidden;
+  object-fit: cover;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   height: 100%;
   width: 100%;
 }
 
-.icon {
-  height: 25%;
-  width: 25%;
+h1 {
+  font-size: 4rem;
+  margin: 10% 10% 10% 0;
+}
+h2 {
+  font-size: 3rem;
+  margin: 5% 0 2% 0;
 }
 
-.grid-container {
+footer {
+  border-top: solid 1px white;
+  margin: 10% 0 0 0;
+}
+
+.icon {
+  height: 150px;
+  width: 150px;
+  margin: 5% 0% 0% 50%;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.grid-container-header {
   display: grid;
   margin: auto;
 
   background-color: none;
-  border: solid 2px black;
+  border: solid 0px transparent;
+  height: 200px;
+  width: 100vwh;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 90%;
+  gap: 10px;
+}
+.grid-item-icon {
+  background-color: none;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.grid-item-header {
+  background-color: none;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+
+.grid-container-gallery {
+  display: grid;
+  margin: auto;
+
+  background-color: none;
+  border: solid 0px transparent;
   height: 1200px;
   width: 890px;
   grid-template-columns: repeat(3, 32.5%);
@@ -47,9 +105,8 @@ img {
 }
 
 .grid-item {
-  background-color: blueviolet;
+  background-color: var(--purpleMed);
   color: white;
-
 }
 
 .side {
